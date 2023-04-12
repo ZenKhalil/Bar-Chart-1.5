@@ -8,7 +8,13 @@ const data = [19, 89, 11, 56, 73, 2, 8, 97, 29, 78, 23, 1, 80, 7, 64, 52, 47, 57
 function start() {
     console.log("JavaScript kører");
     displayAllBars();
+    setInterval(update,1000);
 
+}
+
+function update() {
+    updateData();
+    displayAllBars();
 }
 
 function displayAllBars() {
@@ -20,4 +26,9 @@ function displayAllBars() {
         bar.style.height = `${height}px`;
      }
 
+}
+
+function updateData() {
+    data.push(Math.floor(Math.random));
+    data.shift();
 }
