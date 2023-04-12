@@ -2,6 +2,7 @@
 display: grid;
 grid-template-columns: repeat(40, 1fr);
 gap: 4px;
+align-items: end;
 }
 
 .bar {
